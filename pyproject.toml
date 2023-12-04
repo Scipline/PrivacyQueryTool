@@ -1,0 +1,19 @@
+[project]
+name = "PrivacyQueryTool"
+version = "0.1.0"
+description = "Encapsulate the interface to facilitate individual queries for leaked information."
+authors = [
+    {name = "Scipline", email = "Scipline52@gmail.com"},
+]
+requires-python = ">=3.8,<3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.dependencies]
+PySide6 = "^6.2.0"
+pyperclip = "^1.8.2"
+requests = "^2.26.0"
+
+[build-system]
+requires = ["pdm-pep517"]
+build-backend = "pdm.pep517.api"
