@@ -123,7 +123,7 @@ class MainWindow(QMainWindow):
                 self.qq_result.setText("你输入的数据太长了，不是QQ号")
             else:
                 self.qq_result.setText("查询中……")
-                self.thread = QueryThread('https://zy.xywlapi.cc/qqcx2023?qq=' + qq_number)
+                self.thread = QueryThread(f'{xywlapi}/qqcx2023?qq=' + qq_number)
                 self.thread.result_signal.connect(self.qq_query_result)
                 self.thread.start()
 
